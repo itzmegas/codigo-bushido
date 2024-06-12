@@ -1,0 +1,108 @@
+---
+
+---
+
+<header>
+  <nav>
+    <div class="nav-routes">
+      <a class="link" href="/">EVENTO</a>
+      <a class="link" href="/battles">BATALLAS</a>
+      <div class="divider"></div>
+      <a class="link" href="/vote">VOTÁ</a>
+      <a
+        class="link"
+        href="https://mobbz.compralaentrada.com/eventos/10240"
+        target="_blank"
+        rel="noopener"
+      >
+        ENTRADAS
+      </a>
+    </div>
+    <button class="menu"
+      ><svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+        ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+          d="M4 6l16 0"></path><path d="M4 12l16 0"></path><path d="M4 18l16 0"
+        ></path></svg
+      >
+    </button>
+  </nav>
+  <div class="logos">
+    <img src="/logo.png" width={130} />
+    <img src="/bushido.png" width={200} />
+  </div>
+</header>
+
+<style>
+  header {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    height: 9rem;
+    width: 100%;
+  }
+  .nav-routes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+  }
+  .divider {
+    width: 16rem;
+  }
+  .link {
+    padding: 2.2rem 1.95rem;
+    border-bottom: 5px solid transparent;
+    &:hover {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
+    }
+  }
+  .logos {
+    padding-top: 0.6rem;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    top: 0;
+  }
+  .menu {
+    display: none;
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 975px) {
+    .nav-routes {
+      display: none;
+    }
+    nav {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    .menu {
+      display: inline;
+    }
+  }
+</style>
